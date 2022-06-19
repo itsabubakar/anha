@@ -18,7 +18,7 @@
     --fs-600: 1.4rem;
     --fs-500: 1.2rem;
     --fs-400: 1rem;
-    --fs-300: .8rem;
+    --fs-300: .6rem;
 
     /* font-families */
     --ff-serif: 'Baskervville', serif;
@@ -30,10 +30,10 @@
     --fs-xl: 5rem;
     --fs-800: 3.5rem;
     --fs-700: 2.8rem;
-    --fs-600: 2.4rem;
+    --fs-600: 2.2rem;
     --fs-500: 1.6rem;
-    --fs-400: 1rem;
-    --fs-300: .8rem;
+    --fs-400: 1.2rem;
+    --fs-300: .7rem;
     }
     
 }
@@ -43,9 +43,9 @@
     --fs-xl: 8.75rem;
     --fs-800: 3.75rem;
     --fs-700: 3.25rem;
-    --fs-600: 2rem;
+    --fs-600: 2.4rem;
     --fs-500: 1.625rem;
-    --fs-400: 1rem;
+    --fs-400: 1.3rem;
     --fs-300: .8rem;
     }
 
@@ -62,6 +62,8 @@
 *::before,
 *::after {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 /* Reset margins */
@@ -85,6 +87,15 @@ h5,
 h6,
 p {
     font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--clr-dark);
 }
 
 
@@ -137,6 +148,7 @@ body {
 
 .nav {
     flex-grow: 1;
+    padding-left: 50px;
 }
 
 .primary-navigation {
@@ -178,10 +190,12 @@ body {
     margin-top: 46px;
     margin-bottom:0;
     font-size: var(--fs-xl);
+    color: var(--clr-white);
 }
 
 .secondary-header {
     font-size: var(--fs-700);
+    color: var(--clr-white);
 }
 
 .serif {
@@ -194,4 +208,219 @@ body {
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
+    margin-top: 25px;
+}
+
+.brief-about {
+    display: flex;
+    padding: 100px 100px 70px 100px;
+}
+
+.brief-about-header {
+    min-width: 424px;
+    font-size: var(--fs-600);
+}
+
+.brief-about-header h2{
+    font-weight: 700;
+}
+
+.brief-about-text h4 {
+    font-size: var(--fs-500);
+}
+
+.more-info {
+    color: var(--clr-grey);
+    font-size: var(--fs-400);
+    margin-top: 2px;
+    margin-bottom: 30px;
+}
+
+.brief-about-text-img {
+    display: flex;
+    column-gap: 36px;
+}
+
+.brief-about-text-img-item img {
+    width: 150px;
+    height: 150px;
+}
+
+.img-caption {
+    font-size: var(--fs-400);
+    color: var(--clr-dark);
+    font-weight: 600;
+    margin-top: 5px;
+    margin-left: 1px;
+}
+
+.anha-products {
+    display: flex;
+    column-gap: 60px;
+    background-color: var(--clr-bg);
+    padding: 100px 100px 70px 100px;
+}
+
+.anha-products .heading {
+    align-self: center;
+    width: 100%;
+}
+
+.anha-products .heading h3 {
+    font-size: var(--fs-600);
+    font-weight: 600;
+    color: var(--clr-dark);
+}
+
+.anha-products .heading a {
+    text-decoration: none;
+    font-size: var(--fs-400);
+    color: var(--clr-grey);
+    border-bottom: 2px solid var(--clr-grey);
+    margin-left: 4px;
+}
+
+.anha-products .heading a:hover {
+    color: var(--clr-dark);
+    border-bottom: 2px solid var(--clr-dark);
+}
+
+.anha-products .img-conc {
+    display: grid;
+    grid-template-columns: repeat(3, 250px);
+}
+
+.anha-products .img-item img {
+    width: 250px;
+    height: 230px;
+}
+
+.anha-products .img-item {
+    position: relative;
+}
+
+.anha-products .caption {
+    position: absolute;
+    top: 70%;
+    left: 20px;
+    padding: 5px 40px;
+    border-radius: 10%;
+    background-color: var(--clr-orange);
+}
+
+.reviews {
+    background-image: url(./assets/images/bg-herb-01.jpg);
+    background-attachment: fixed;
+    height: 440px;
+    color: var(--clr-white);
+}
+
+.reviews .overlay {
+    background-color: rgba(0, 0, 0, 0.500);
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    height: 440px;
+}
+
+.reviews h2 {
+    color: var(--clr-white);
+}
+
+.avatar-img img {
+    width: 176px;
+    height: 164px;
+    border-radius: 50%;
+}
+
+.reviews .avatar-img {
+    text-align: center;
+}
+
+.reviews .title {
+    font-size: var(--fs-300);
+    font-style: italic;
+    letter-spacing: 3px;
+}
+
+.reviews .name {
+    margin-top: 30px;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 227px 240px 304px;
+    justify-content: space-between;
+    margin: 100px;
+}
+
+.footer-nav-conc {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-nav-conc ul{
+    list-style: none;
+}
+
+.footer .logo-conc {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer-logo .caption{
+    font-size: var(--fs-600);
+    font-weight: 600;
+    color: var(--clr-dark);
+}
+
+.footer-logo .copyright {
+    font-size: var(--fs-300);
+}
+
+.footer-logo img {
+    width: 101px;
+    height: 90px;
+    border-radius: 50%;
+}
+
+.footer h2 {
+    font-size: var(--fs-400);
+    font-weight: 600;
+}
+
+.footer-nav-conc a{
+    text-decoration: none;
+    color: var(--clr-dark);
+    text-transform: uppercase;
+    font-size: var(--fs-300);
+    font-weight: 600;
+}
+
+.footer .newsletter p {
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.email {
+    width: 170px;
+    border: none;   
+    border-bottom: 1px solid var(--clr-dark);
+}
+
+.footer .newsletter-form {
+    display: flex;
+    font-size: var(--fs-300);
+    outline: none;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.subscribe-btn {
+    font-size: var(--fs-300);
+    text-transform: uppercase;
+    background: none;
+    border: 3px solid var(--clr-orange);
+    padding: 6px 12px;
 }
