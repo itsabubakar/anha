@@ -11,7 +11,8 @@
       href="https://fonts.googleapis.com/css2?family=Baskervville&family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="app.js" defer></script>
   </head>
   <body>
     <div class="container">
@@ -20,10 +21,20 @@
           <div>
             <img src="./assets/logo_1.png" alt="" srcset="" class="hero-logo" />
           </div>
+
+        <div
+          class="mobile-nav-toggle open"
+          aria-controls="primary-nav"
+          aria-expanded="false"
+        ><img src="./assets/icons/icons8-menu-24.png" alt="" srcset=""></div>
+
+        <div
+          class="mobile-nav-toggle close"
+        ><img src="./assets/icons/icons8-close-24.png" alt="" srcset=""></div>
           <nav class="nav">
-            <ul class="primary-navigation">
-              <li><a href="">home</a></li>
-              <li><a href="">about</a></li>
+            <ul class="primary-navigation primary-nav flex" id="primary-nav" data-visible="false">
+              <li><a href="./index.html">home</a></li>
+              <li><a href="./pages/about.html">about</a></li>
               <li><a href="">contact</a></li>
               <li><a href="">events</a></li>
               <li><a href="">blog</a></li>
