@@ -199,6 +199,10 @@ body {
         padding-bottom: 70px;
     }
 
+    .hero-items {
+        margin: 0 20px;
+    }      
+
     .hero-logo {
         margin-left: 100px;
     }

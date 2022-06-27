@@ -1,4 +1,57 @@
+@import '../index.css';
+
+:root {
+
+    /* font-sizes */
+    --fs-800: 3.25rem;
+}
+
+@media (min-width: 35.5em) {
+    :root {
+    --fs-800: 4.25rem;
+    }
+    
+}
+
+@media (min-width: 56.25em) {
+    :root {
+    --fs-800: 6.25rem;
+    }
+
+}
+
 .hero {
     height: 461px;
     background-size: cover;
+}
+
+.hero-items {
+    display: flex;
+    align-items: end;
+    text-align: left;
+    height: 100%;
+    padding-bottom: 70px;
+}
+
+.hero-text a {
+    color: inherit;
+}
+
+.hero-text a:hover {
+    color: var(--clr-orange);
+}
+
+.secondary-header {
+    font-size: var(--fs-800);
+}
+
+.orange {
+    color: var(--clr-orange);
+}
+
+@media (min-width: 65.25em) {
+    .hero-items {
+        align-items: center;
+        padding-bottom: 0;
+    }
 }
