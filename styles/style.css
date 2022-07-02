@@ -21,8 +21,15 @@
 }
 
 .hero {
-    height: 461px;
+    height: 350px;
     background-size: cover;
+}
+
+@media (min-width: 500px) {
+    .hero {
+        height: 461px;
+        background-size: cover;
+    }
 }
 
 .hero-items {

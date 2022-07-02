@@ -1,0 +1,56 @@
+.hero {
+    background-image: url(../assets/images/blog-hero-bg.png);
+}
+
+.blog-conc {
+    margin: 100px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.blog {
+    max-width: 1000px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 550px) and (max-width: 800px){
+    .blog {
+        grid-template-columns: 250px 250px;
+        gap: 20px;
+    }
+}
+
+@media (min-width: 800px){
+    .blog {
+        grid-template-columns: 300px 300px 300px;
+        gap: 20px;
+    }
+}
+
+.blog-content {
+    margin-bottom: 60px;
+}
+
+.content-info {
+    margin-top: 24px;
+}
+
+.heading {
+    font-size: var(--fs-500);
+}
+
+.submit-date-comment {
+    font-size: var(--fs-300);
+    color: var(--clr-orange);
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.summary {
+    font-size: var(--fs-400);
+    line-height: 1.7;
+    letter-spacing: 1px;
+}
+
