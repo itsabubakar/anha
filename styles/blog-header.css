@@ -1,0 +1,81 @@
+@media (max-width: 65em) {
+    .hero {
+        padding-left: 0;
+        padding-right: 0;
+        height: 100%;
+        padding-bottom: 70px;
+    }
+
+    .hero-items {
+        margin: 0 20px;
+    }      
+
+    .hero-logo {
+        margin-left: 100px;
+    }
+
+    .header {
+        background-color: #fff;
+    }
+
+    .primary-navigation li a {
+        color: var(--clr-dark);
+    }
+
+    .touch {
+        margin-left: 0;
+    }
+
+    .primary-nav {
+        display: flex;
+        gap: 2rem;
+        position: fixed;
+        z-index: 1000;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 10%;
+
+
+
+        flex-direction: column;
+        /* padding: min(20vh, 5rem) 2em; */
+        padding: 2em;
+
+        background: #ffffff;
+
+        transform: translateX(100%);
+        transition: transform 350ms ease-out;
+    }
+
+    .primary-nav[data-visible="true"] {
+        transform: translateX(0%);
+    }
+
+    .primary-nav a {
+        color: rgba(0, 0, 0, 0.816);
+    }
+
+    .mobile-nav-toggle img {
+        display: block;
+    }
+
+    .mobile-nav-toggle {
+        display: block;
+        position: absolute;
+        z-index: 9999;
+        width: 1.5rem;
+        border: 0;
+        aspect-ratio: 1;
+        right: 2rem;
+    }
+
+    .close {
+        display: none;
+    }
+
+    .flex {
+        gap: 1.5rem;
+    }
+
+}
