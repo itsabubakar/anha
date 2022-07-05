@@ -39,6 +39,7 @@
 
 .heading {
     font-size: var(--fs-500);
+    color: inherit;
 }
 
 .submit-date-comment {

@@ -1,58 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Baskervville&family=Inter:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="../index.css" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../index.css">
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/join-us.css">
+    <script src="../script/print.js" defer></script>
     <script src="../app.js" defer></script>
-  </head>
-  <body>
-    <div class="container">
-      <div class="hero">
-        <header class="header">
-          <div>
-            <img src="../assets/logo_1.png" alt="" srcset="" class="hero-logo" />
-          </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
+</head>
 
-        <div
-          class="mobile-nav-toggle open"
-          aria-controls="primary-nav"
-          aria-expanded="false"
-        ><img src="../assets/icons/icons8-menu-24.png" alt="" srcset=""></div>
+<body>
 
-        <div
-          class="mobile-nav-toggle close"
-        ><img src="../assets/icons/icons8-close-24.png" alt="" srcset=""></div>
-          <nav class="nav">
-            <ul class="primary-navigation primary-nav flex" id="primary-nav" data-visible="false">
-              <li><a href="../index.html">home</a></li>
-              <li><a href="./about.html">about</a></li>
-              <li><a href="./contact.html">contact</a></li>
-              <li><a href="./events.html" class="active">events</a></li>
-              <li><a href="./blog.html">blog</a></li>
-              <li class="touch"><a href="">get in touch</a></li>
-            </ul>
-          </nav>
-        </header>
-        <div class="hero-items">
-          <div class="hero-text">
-            <h2 class="secondary-header serif">
-              About <span class="orange">Events</span>
-            </h2>
-            <p><a href="../index.html">ANHA</a> > <span class="orange">Events</span></p>
-          </div>
-        </div>
+  <div class="hero">
+    <header class="header">
+      <div>
+        <img src="../assets/logo_1.png" alt="" srcset="" class="hero-logo" />
       </div>
+
+    <div
+      class="mobile-nav-toggle open"
+      aria-controls="primary-nav"
+      aria-expanded="false"
+    ><img src="../assets/icons/icons8-menu-24.png" alt="" srcset=""></div>
+
+    <div
+      class="mobile-nav-toggle close"
+    ><img src="../assets/icons/icons8-close-24.png" alt="" srcset=""></div>
+      <nav class="nav">
+        <ul class="primary-navigation primary-nav flex" id="primary-nav" data-visible="false">
+            <li><a href="../index.html">home</a></li>
+            <li><a href="./about.html">about</a></li>
+            <li><a href="./contact.html">contact</a></li>
+            <li><a href="./events.html">events</a></li>
+            <li><a href="./blog.html">blog</a></li>
+            <li class="touch"><a href="./join-us.html">join us</a></li>
+          </ul>
+      </nav>
+    </header>
+    <div class="hero-items">
+      <div class="hero-text">
+        <h2 class="secondary-header serif">
+          About <span class="orange">Events</span>
+        </h2>
+        <p><a href="../index.html">ANHA</a> > <span class="orange">Events</span></p>
+      </div>
+    </div>
+  </div>
 
       <section class="join-us-form">
         <div class="form-conc">
@@ -68,17 +66,17 @@
           <h3>Download form</h3>
           <div class="info-flex">
             <p>Download form and print to register offline</p>
-        <button class="download-form onhover">download</button>
+        <button class="download-form onhover" id="download">download</button>
     </div>
           
         </div>
 
         <div class="register-info">
           <h3>Online Registratiom</h3>
-          <p>Fill form below to register online</p>
+          <p>Fill form below to register</p>
           </div>
         
-        <form action="" class="form">
+        <form action="" class="form" id="invoice">
             <div class="form-group">
                 <label for="fname">First Name</label>
                 <input type="text" class="form-control" placeholder="Farid" id="fname">
@@ -130,7 +128,7 @@
         </div>
         
       </section>
-
+    
       <footer class="footer top-line">
         <div class="footer-logo">
           <div class="logo-conc">
@@ -141,20 +139,20 @@
         </div>
 
         <div class="footer-links">
-          <h2>ADDITIONAL MENU</h2>
-          <div class="footer-nav-conc">
-            <ul class="first-column">
-              <li><a href="">home</a></li>
-              <li><a href="">about</a></li>
-              <li><a href="">contact</a></li>
-              <li><a href="">events</a></li>
-            </ul>
-            <ul class="second-column">
-              <li><a href="">blog</a></li>
-              <li><a href="">support</a></li>
-            </ul>
+            <h2>ADDITIONAL MENU</h2>
+            <div class="footer-nav-conc">
+              <ul class="first-column">
+                <li><a href="../index.html">home</a></li>
+                <li><a href="./about.html">about</a></li>
+                <li><a href="./contact.html">contact</a></li>
+                <li><a href="./events.html">events</a></li>
+              </ul>
+              <ul class="second-column">
+                <li><a href="./blog.html">blog</a></li>
+                <li><a href="./join-us.html">Join Us</a></li>
+              </ul>
+            </div>
           </div>
-        </div>
 
         <div class="newsletter">
           <h2>GET A NEWSLETTER</h2>
@@ -165,6 +163,6 @@
           </form>
         </div>
       </footer>
-    </div>
-  </body>
+</body>
+
 </html>
