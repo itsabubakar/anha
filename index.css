@@ -33,7 +33,7 @@
     --fs-600: 2.2rem;
     --fs-500: 1.6rem;
     --fs-400: 1.2rem;
-    --fs-300: .7rem;
+    --fs-300: .8rem;
     }
     
 }
@@ -46,7 +46,7 @@
     --fs-600: 2.4rem;
     --fs-500: 1.625rem;
     --fs-400: 1.3rem;
-    --fs-300: .8rem;
+    --fs-300: 1rem;
     }
 
 }
@@ -165,8 +165,8 @@ body {
     text-transform: uppercase;
     text-decoration: none;
     color: var(--clr-white);
-    font-size: var(--fs-400);
-    font-weight: 500;
+    font-size: var(--fs-300);
+    font-weight: 600;
 }
 
 .primary-navigation li a:hover {

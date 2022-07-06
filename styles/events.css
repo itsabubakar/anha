@@ -23,6 +23,10 @@
     margin: 70px 0;
 }
 
+.event-description {
+    width: 100%;
+}
+
 .event-description h3 {
     font-size: var(--fs-500);
     margin-bottom: 12px;
