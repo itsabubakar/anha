@@ -15,6 +15,10 @@
     color: #000;
 }
 
+.hero-logo {
+    margin-top: 0px;
+}
+
 .hero-items {
     padding-bottom: 0;
 }
