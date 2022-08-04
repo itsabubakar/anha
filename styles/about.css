@@ -75,7 +75,7 @@
     position: absolute;
     top: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.400);
+    background-color: rgba(0, 0, 0, 1);
     height: 100%;
     width: 100%;
     color: #fff;
@@ -85,6 +85,7 @@
 
 .name-title {
     padding: 0px 0px 15px 15px;
+    visibility: hidden;
 }
 
 .board-img-overlay .name{
