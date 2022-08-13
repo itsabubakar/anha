@@ -1,38 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
-    <link rel="stylesheet" href="../index.css">
-    <link rel="stylesheet" href="../styles/style.css">
-    <link rel="stylesheet" href="../styles/join-us.css">
+    <link rel="stylesheet" href="../index.css" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/join-us.css" />
     <script src="../app.js" defer></script>
+    <script src="../script/form.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
+    <div class="hero">
+      <header class="header">
+        <div>
+          <img
+            src="../assets/anha-logo-white.png"
+            alt=""
+            srcset=""
+            class="hero-logo white-logo"
+          />
+          <img
+            src="../assets/anha-logo.png"
+            alt=""
+            srcset=""
+            class="hero-logo black-logo"
+          />
+        </div>
 
-  <div class="hero">
-    <header class="header">
-      <div>
-        <img src="../assets/anha-logo-white.png" alt="" srcset="" class="hero-logo white-logo"/>
-        <img src="../assets/anha-logo.png" alt="" srcset="" class="hero-logo black-logo" />
-      </div>
+        <div
+          class="mobile-nav-toggle open"
+          aria-controls="primary-nav"
+          aria-expanded="false"
+        >
+          <img src="../assets/icons/icons8-menu-24.png" alt="" srcset="" />
+        </div>
 
-    <div
-      class="mobile-nav-toggle open"
-      aria-controls="primary-nav"
-      aria-expanded="false"
-    ><img src="../assets/icons/icons8-menu-24.png" alt="" srcset=""></div>
-
-    <div
-      class="mobile-nav-toggle close"
-    ><img src="../assets/icons/icons8-close-24.png" alt="" srcset=""></div>
-      <nav class="nav">
-        <ul class="primary-navigation primary-nav flex" id="primary-nav" data-visible="false">
+        <div class="mobile-nav-toggle close">
+          <img src="../assets/icons/icons8-close-24.png" alt="" srcset="" />
+        </div>
+        <nav class="nav">
+          <ul
+            class="primary-navigation primary-nav flex"
+            id="primary-nav"
+            data-visible="false"
+          >
             <li><a href="../index.html">home</a></li>
             <li><a href="./about.html">about</a></li>
             <li><a href="./contact.html">contact</a></li>
@@ -40,165 +55,228 @@
             <li><a href="./blog.html">blog</a></li>
             <li class="touch"><a href="./join-us.html">join us</a></li>
           </ul>
-      </nav>
-    </header>
-    <div class="hero-items">
-      <div class="hero-text">
-        <h2 class="secondary-header serif">
-          Join <span class="orange">ANHA</span>
-        </h2>
-        <p><a href="../index.html">ANHA</a> > <span class="orange">Join</span></p>
+        </nav>
+      </header>
+      <div class="hero-items">
+        <div class="hero-text">
+          <h2 class="secondary-header serif">
+            Join <span class="orange">ANHA</span>
+          </h2>
+          <p>
+            <a href="../index.html">ANHA</a> > <span class="orange">Join</span>
+          </p>
+        </div>
       </div>
     </div>
-  </div>
 
-      <section class="join-us-form">
-        <div class="form-conc">
-          <div class="form">
-            
+    <section class="join-us-form">
+      <div class="form-conc">
+        <div class="form">
+          <div class="form-input">
+            <h3>Registration form</h3>
+            <form action="" class="form-data" id="form">
+              <div class="input-elem name">
+                <label for="name">Full Name:</label>
+                <input id="name" type="text" class="input" />
+                <small></small>
+              </div>
+              <div class="input-elem address">
+                <label for="address">Address</label>
+                <input id="address" type="text" class="input" />
+                <small></small>
+              </div>
+              <div class="input-elem state">
+                <label for="state">State</label>
+                <input id="state" type="text" class="input" />
+                <small></small>
+              </div>
+              <div class="input-elem number">
+                <label for="number">Phone Number</label>
+                <input id="number" type="text" class="input" />
+                <small></small>
+              </div>
+              <div class="input-elem email-input">
+                <label for="email-input">Email</label>
+                <input id="email-input" type="text" class="input" />
+              </div>
+              <div class="input-elem marital">
+                <label for="marital">Marital Status</label>
+                <input id="marital" type="text" class="input" />
+              </div>
+              <div class="input-elem prof">
+                <label for="prof">Profession</label>
+                <input id="prof" type="text" class="input" />
+              </div>
+              <div class="input-elem nation">
+                <label for="nation">Nationality</label>
+                <input id="nation" type="text" class="input" />
+              </div>
+              <div class="input-elem">
+                <label for="origin">State of Origin</label>
+                <input id="origin" type="text" class="input state" />
+              </div>
+              <div class="input-elem referral">
+                <label for="referral">Referred by:</label>
+                <input id="referral" type="text" class="input" />
+              </div>
 
-            <div class="form-input">
-              <h3>Registration form</h3>
-              <form action="" class="form-data">
-                <div class="input-elem name">
-                  <label for="name">Full Name:</label>
-                  <input type="text" class="input ">
-                </div>
-                <div class="input-elem address">
-                  <label for="">Address</label>
-                  <input type="text" class="input ">
-                </div>
-                <div class="input-elem state">
-                  <label for="">State</label>
-                  <input type="text" class="input ">
-                </div>
-                <div class="input-elem number">
-                  <label for="">Phone Number</label>
-                  <input type="text" class="input ">
-                </div>
-                <div class="input-elem email-input">
-                  <label for="">Email</label>
-                  <input type="text" class="input ">
-                </div>
-                <div class="input-elem marital">
-                  <label for="">Marital Status</label>
-                  <input type="text" class="input ">
-                </div>
-                <div class="input-elem prof">
-                  <label for="">Profession</label>
-                  <input type="text" class="input ">
-                </div>
-                <div class="input-elem nation">
-                  <label for="">Nationality</label>
-                  <input type="text" class="input ">
-                </div>
-                <div class="input-elem">
-                  <label for="">State of Origin</label>
-                  <input type="text" class="input state">
-                </div>
-                <div class="input-elem referral">
-                  <label for="">Referred by:</label>
-                  <input type="text" class="input ">
-                </div>
+              <div class="radio-btns">
+                <p>Identification:</p>
 
-                <div class="radio-btns">
-                  <p>Identification:</p>
+                <input
+                  type="radio"
+                  id="nin"
+                  name="identification"
+                  value="NIN"
+                />
+                <label for="nin">NIN</label><br />
 
-                  <input type="radio" id="nin" name="identification" value="NIN">
-                  <label for="nin">NIN</label><br>
+                <input
+                  type="radio"
+                  id="passport"
+                  name="identification"
+                  value="passport"
+                />
+                <label for="passport">Passport</label><br />
 
-                  <input type="radio" id="passport" name="identification" value="passport">
-                  <label for="passport">Passport</label><br>
-            
-                  <input type="radio" id="votersCard" name="identification" value="voterscard">
-                  <label for="votersCard">Voters Card</label><br>
+                <input
+                  type="radio"
+                  id="votersCard"
+                  name="identification"
+                  value="voterscard"
+                />
+                <label for="votersCard">Voters Card</label><br />
 
-                  <input type="radio" id="others" name="identification" value="others">
-                  <label for="others">Others</label>
-                  
-                  
-                </div>
+                <input
+                  type="radio"
+                  id="others"
+                  name="identification"
+                  value="others"
+                />
+                <label for="others">Others</label>
+              </div>
 
-                <div class="join-wish">
-                  <label for="wish">Why do you wish to join ANHA</label>
+              <div class="join-wish">
+                <label for="wish">Why do you wish to join ANHA</label>
                 <!-- <input type="textarea" class="wish"> -->
-                <textarea name="" id="" cols="30" rows="2" class="textarea"></textarea>
-                </div>
+                <textarea
+                  name=""
+                  id="wish"
+                  cols="30"
+                  rows="2"
+                  class="textarea"
+                ></textarea>
+              </div>
 
-                <div class="farm-desc">
-                  <label for="farmDesc">Do you own a farm, if yes kindly indicate location, type and what is grown there:</label>
-                <textarea name="" id="" cols="30" rows="2" class="textarea"></textarea>
-                </div>
+              <div class="farm-desc">
+                <label for="farmDesc"
+                  >Do you own a farm, if yes kindly indicate location, type and
+                  what is grown there:</label
+                >
+                <textarea
+                  name=""
+                  id="farmDesc"
+                  cols="30"
+                  rows="2"
+                  class="textarea"
+                ></textarea>
+              </div>
 
-                <div class="radio-btns">
-                  <p>Membership Type:</p>
+              <div class="radio-btns">
+                <p>Membership Type:</p>
 
-                  <input type="radio" id="nin" name="membership_type" value="NIN">
-                  <label for="nin">Corporate Membership(3 representatives max) - ₦20,000</label><br>
+                <input
+                  type="radio"
+                  id="nin"
+                  name="membership_type"
+                  value="NIN"
+                />
+                <label for="nin"
+                  >Corporate Membership(3 representatives max) - ₦20,000</label
+                ><br />
 
-                  <input type="radio" id="passport" name="membership_type" value="passport">
-                  <label for="passport">Individual - ₦7500</label><br>
-            
-                  <input type="radio" id="votersCard" name="membership_type" value="voterscard">
-                  <label for="votersCard">Associate - ₦2500</label><br>
-                  
-                </div>
+                <input
+                  type="radio"
+                  id="passport"
+                  name="membership_type"
+                  value="passport"
+                />
+                <label for="passport">Individual - ₦7500</label><br />
 
-                
-                
-                <div class="reg-btn"><a href="./payement.html" class="register-btn">Register</a></div>
-                <div class="reg-info">
-                  <p>By clicking register, you agree to all ANHA Terms & Conditions</p>
-                </div>
+                <input
+                  type="radio"
+                  id="votersCard"
+                  name="membership_type"
+                  value="voterscard"
+                />
+                <label for="votersCard">Associate - ₦2500</label><br />
+              </div>
 
-              </form>
-            </div>
-            <div class="form-info">
-              <h3>Join ANHA</h3>
-              <p>Click the button bellow to download the AFRICAN HERBS AND NONI ASSOCIATION form to fill offline</p>
-              <p>Submit the completed form to any ANHA office and make payment there</p>
-              <a href="./anha-form.jpg" download="ANHA-Form">
-              <button class="download-form" type="button">Download Form</button></a>
-            </div>
-          </div>
-        </div>
-        
-      </section>
-    
-      <footer class="footer top-line">
-        <div class="footer-logo">
-          <div class="logo-conc">
-            <img src="../assets/anha-logo.png" alt="" srcset="">
-            <p class="caption">ANHA</p>
-          </div>
-          <p class="copyright">© 2022, ANHA. All rights reserved.</p>
-        </div>
-
-        <div class="footer-links">
-            <h2>ADDITIONAL MENU</h2>
-            <div class="footer-nav-conc">
-              <ul class="first-column">
-                <li><a href="../index.html">home</a></li>
-                <li><a href="./about.html">about</a></li>
-                <li><a href="./contact.html">contact</a></li>
-                <li><a href="./events.html">events</a></li>
-              </ul>
-              <ul class="second-column">
-                <li><a href="./blog.html">blog</a></li>
-                <li><a href="./join-us.html">Join Us</a></li>
-              </ul>
-            </div>
+              <div class="reg-btn">
+                <!-- <a href="./payement.html" class="register-btn">Register</a> -->
+                <input type="submit" value="submit" />
+              </div>
+              <div class="reg-info">
+                <p>
+                  By clicking register, you agree to all ANHA Terms & Conditions
+                </p>
+              </div>
+            </form>
           </div>
 
-        <div class="newsletter">
-          <h2>GET A NEWSLETTER</h2>
-          <p>Learn about ANHA  through highly our informative  newsletters</p>
-          <form action="" class="newsletter-form">
-            <input type="text" class="email" placeholder="E-mail">
-            <input type="submit" value="subscribe" class="subscribe-btn">
-          </form>
+          <div class="form-info">
+            <h3>Join ANHA</h3>
+            <p>
+              Click the button bellow to download the AFRICAN HERBS AND NONI
+              ASSOCIATION form to fill offline
+            </p>
+            <p>
+              Submit the completed form to any ANHA office and make payment
+              there
+            </p>
+            <a href="./anha-form.jpg" download="ANHA-Form">
+              <button class="download-form" type="button">
+                Download Form
+              </button></a
+            >
+          </div>
         </div>
-      </footer>
-</body>
+      </div>
+    </section>
 
+    <footer class="footer top-line">
+      <div class="footer-logo">
+        <div class="logo-conc">
+          <img src="../assets/anha-logo.png" alt="" srcset="" />
+          <p class="caption">ANHA</p>
+        </div>
+        <p class="copyright">© 2022, ANHA. All rights reserved.</p>
+      </div>
+
+      <div class="footer-links">
+        <h2>ADDITIONAL MENU</h2>
+        <div class="footer-nav-conc">
+          <ul class="first-column">
+            <li><a href="../index.html">home</a></li>
+            <li><a href="./about.html">about</a></li>
+            <li><a href="./contact.html">contact</a></li>
+            <li><a href="./events.html">events</a></li>
+          </ul>
+          <ul class="second-column">
+            <li><a href="./blog.html">blog</a></li>
+            <li><a href="./join-us.html">Join Us</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="newsletter">
+        <h2>GET A NEWSLETTER</h2>
+        <p>Learn about ANHA through highly our informative newsletters</p>
+        <form action="" class="newsletter-form">
+          <input type="text" class="email" placeholder="E-mail" />
+          <input type="submit" value="subscribe" class="subscribe-btn" />
+        </form>
+      </div>
+    </footer>
+  </body>
 </html>
