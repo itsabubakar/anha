@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../styles/style.css" />
     <link rel="stylesheet" href="../styles/join-us.css" />
     <script src="../app.js" defer></script>
-    <script src="../script/form.js" defer></script>
+    <!-- <script src="../script/form.js" defer></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
   </head>
 
@@ -74,15 +74,15 @@
         <div class="form">
           <div class="form-input">
             <h3>Registration form</h3>
-            <form action="" class="form-data" id="form">
+            <form action="/join-us" class="form-data" id="form" method="post">
               <div class="input-elem name">
                 <label for="name">Full Name:</label>
-                <input id="name" type="text" class="input" />
+                <input id="name" type="text" class="input" name="name" />
                 <small></small>
               </div>
               <div class="input-elem address">
                 <label for="address">Address</label>
-                <input id="address" type="text" class="input" />
+                <input id="address" type="text" class="input" name="address" />
                 <small></small>
               </div>
               <div class="input-elem state">
@@ -98,6 +98,7 @@
               <div class="input-elem email-input">
                 <label for="email-input">Email</label>
                 <input id="email-input" type="text" class="input" />
+                <small></small>
               </div>
               <div class="input-elem marital">
                 <label for="marital">Marital Status</label>
@@ -106,14 +107,17 @@
               <div class="input-elem prof">
                 <label for="prof">Profession</label>
                 <input id="prof" type="text" class="input" />
+                <small></small>
               </div>
               <div class="input-elem nation">
                 <label for="nation">Nationality</label>
                 <input id="nation" type="text" class="input" />
+                <small></small>
               </div>
               <div class="input-elem">
                 <label for="origin">State of Origin</label>
                 <input id="origin" type="text" class="input state" />
+                <small></small>
               </div>
               <div class="input-elem referral">
                 <label for="referral">Referred by:</label>
@@ -182,39 +186,40 @@
                 ></textarea>
               </div>
 
-              <div class="radio-btns">
+              <div class="radio-btns" id="membershipType">
                 <p>Membership Type:</p>
 
                 <input
                   type="radio"
-                  id="nin"
+                  id="corporate"
                   name="membership_type"
-                  value="NIN"
+                  value="corporate"
                 />
-                <label for="nin"
+                <label for="corporate"
                   >Corporate Membership(3 representatives max) - ₦20,000</label
                 ><br />
 
                 <input
                   type="radio"
-                  id="passport"
+                  id="individual"
                   name="membership_type"
-                  value="passport"
+                  value="individual"
                 />
-                <label for="passport">Individual - ₦7500</label><br />
+                <label for="individual">Individual - ₦7500</label><br />
 
                 <input
                   type="radio"
-                  id="votersCard"
+                  id="associate"
                   name="membership_type"
-                  value="voterscard"
+                  value="associate"
                 />
-                <label for="votersCard">Associate - ₦2500</label><br />
+                <label for="associate">Associate - ₦2500</label><br />
               </div>
 
               <div class="reg-btn">
                 <!-- <a href="./payement.html" class="register-btn">Register</a> -->
-                <input type="submit" value="submit" />
+                <input type="submit" value="submit" class="register-btn" />
+                <small></small>
               </div>
               <div class="reg-info">
                 <p>

@@ -1,0 +1,28 @@
+{
+  "name": "anha",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000a\u0000n\u0000h\u0000a\u0000\r\u0000 \u0000",
+  "main": "app.js",
+  "scripts": {
+    "devStart": "nodemon script.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itsabubakar/anha.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/itsabubakar/anha/issues"
+  },
+  "homepage": "https://github.com/itsabubakar/anha#readme",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "express": "^4.18.1",
+    "mongoose": "^6.5.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}

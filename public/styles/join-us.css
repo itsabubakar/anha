@@ -139,6 +139,7 @@ label {
 
 .register-btn {
     display: block;
+    text-transform: uppercase;
     text-align: center;
     width: 100%;
     background-color: var(--clr-orange);
