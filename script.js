@@ -5,7 +5,7 @@ const path = require('path');
 const app = express()
 
 app.use(bodyParser.urlencoded({extended: false}));
-app.use(express.static('./public'))
+app.use(express.static('./public_html'))
 
 const uri = 'mongodb+srv://seeker:blackwolf99157@cluster0.5ncyljk.mongodb.net/Collection0';
 
