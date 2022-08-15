@@ -37,6 +37,6 @@ app.post(('/join-us'), (req, res)=> {
     res.redirect('/pages/join-us.html');
 })
 
-app.listen(8080, ()=> {
-    console.log('server started on 8080');
-})
+// app.listen(8080, ()=> {
+//     console.log('server started on 8080');
+// })
