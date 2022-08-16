@@ -77,7 +77,7 @@
             <form action="/join-us" class="form-data" id="form" method="post">
               <div class="input-elem name">
                 <label for="name">Full Name:</label>
-                <input id="name" type="text" class="input" name="name" />
+                <input id="name" type="text" class="input" name="fullName" />
                 <small></small>
               </div>
               <div class="input-elem address">
@@ -87,41 +87,41 @@
               </div>
               <div class="input-elem state">
                 <label for="state">State</label>
-                <input id="state" type="text" class="input" />
+                <input id="state" type="text" class="input" name="state" />
                 <small></small>
               </div>
               <div class="input-elem number">
                 <label for="number">Phone Number</label>
-                <input id="number" type="text" class="input" />
+                <input id="number" type="text" class="input" name="phone" />
                 <small></small>
               </div>
               <div class="input-elem email-input">
                 <label for="email-input">Email</label>
-                <input id="email-input" type="text" class="input" />
+                <input id="email-input" type="text" class="input" name="email" />
                 <small></small>
               </div>
               <div class="input-elem marital">
                 <label for="marital">Marital Status</label>
-                <input id="marital" type="text" class="input" />
+                <input id="marital" type="text" name="maritalStatus" class="input" />
               </div>
               <div class="input-elem prof">
                 <label for="prof">Profession</label>
-                <input id="prof" type="text" class="input" />
+                <input id="prof" type="text" class="input" name="profession" />
                 <small></small>
               </div>
               <div class="input-elem nation">
                 <label for="nation">Nationality</label>
-                <input id="nation" type="text" class="input" />
+                <input id="nation" type="text" class="input" name="nationality" />
                 <small></small>
               </div>
               <div class="input-elem">
                 <label for="origin">State of Origin</label>
-                <input id="origin" type="text" class="input state" />
+                <input id="origin" type="text" class="input state" name="state" />
                 <small></small>
               </div>
               <div class="input-elem referral">
                 <label for="referral">Referred by:</label>
-                <input id="referral" type="text" class="input" />
+                <input id="referral" type="text" class="input" name="referredBy" />
               </div>
 
               <div class="radio-btns">
@@ -192,7 +192,7 @@
                 <input
                   type="radio"
                   id="corporate"
-                  name="membership_type"
+                  name="membershipType"
                   value="corporate"
                 />
                 <label for="corporate"
@@ -202,7 +202,7 @@
                 <input
                   type="radio"
                   id="individual"
-                  name="membership_type"
+                  name="membershipType"
                   value="individual"
                 />
                 <label for="individual">Individual - ₦7500</label><br />
@@ -210,7 +210,7 @@
                 <input
                   type="radio"
                   id="associate"
-                  name="membership_type"
+                  name="membershipType"
                   value="associate"
                 />
                 <label for="associate">Associate - ₦2500</label><br />

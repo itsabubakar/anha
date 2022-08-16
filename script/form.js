@@ -129,12 +129,14 @@ form.addEventListener('submit', function (e) {
     // submit to the server if the form is valid
     if (isFormValid) {
         const myFormData = new FormData(e.target);
-        const formDataObj = {};
+        let formDataObj = {};
          myFormData.forEach((value, key) => (formDataObj[key] = value));
-          console.log(formDataObj);
-          fetch('http:/africannoniandherbs.herokuapp.com/join-us', {
+          fetch('https://africannoniandherbs.herokuapp.com/join-us', {
+            headers: {
+                "Content-Type": "application/json"
+            },
             method: 'POST',
-            body: formDataObj,
+            body: JSON.stringify(formDataObj),
           })
           .then(res => res.json())
           .then(data => console.log(data))
