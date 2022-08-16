@@ -59,7 +59,6 @@ const checkState = () => {
     } else {
         showSuccess(stateEl);
         valid = true;
-        console.log(stateEl.value);
     }
     return valid;
 }
@@ -108,7 +107,7 @@ const checkNumber = () => {
 
 form.addEventListener('submit', function (e) {
     // prevent the form from submitting
-    e.preventDefault();
+    // e.preventDefault();
 
     // validate fields
     let isNameValid = checkName(),
@@ -133,7 +132,7 @@ form.addEventListener('submit', function (e) {
         const formDataObj = {};
          myFormData.forEach((value, key) => (formDataObj[key] = value));
           console.log(formDataObj);
-          fetch('https:/africannoniandherbs.herokuapp.com/join-us', {
+          fetch('http:/africannoniandherbs.herokuapp.com/join-us', {
             method: 'POST',
             body: formDataObj,
           })
