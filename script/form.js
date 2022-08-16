@@ -133,9 +133,9 @@ form.addEventListener('submit', function (e) {
         let formDataObj = {};
          myFormData.forEach((value, key) => (formDataObj[key] = value));
           console.log(formDataObj);
-          fetch('http:/africannoniandherbs.herokuapp.com/join-us', {
+          fetch('https://africannoniandherbs.herokuapp.com/join-us', {
             method: 'POST',
-            body: formDataObj,
+            body: JSON.stringify(formDataObj),
           })
           .then(res => res.json())
           .then(data => console.log(data))

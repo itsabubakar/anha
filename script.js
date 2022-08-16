@@ -49,6 +49,7 @@ app.get("/potatoes", (req, res) => {
 });
 
 app.post("/join-us", async (req, res) => {
+  console.log("request was made", req.body)
   let newAnha = new Anha(req.body);
   try {
     await newAnha.save();
