@@ -107,7 +107,7 @@ const checkNumber = () => {
 
 form.addEventListener('submit', function (e) {
     // prevent the form from submitting
-    // e.preventDefault();
+    e.preventDefault();
 
     // validate fields
     let isNameValid = checkName(),
