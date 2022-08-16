@@ -132,8 +132,10 @@ form.addEventListener('submit', function (e) {
         const myFormData = new FormData(e.target);
         let formDataObj = {};
          myFormData.forEach((value, key) => (formDataObj[key] = value));
-          console.log(formDataObj);
           fetch('https://africannoniandherbs.herokuapp.com/join-us', {
+            headers: {
+                "Content-Type": "application/json"
+            },
             method: 'POST',
             body: JSON.stringify(formDataObj),
           })

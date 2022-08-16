@@ -38,7 +38,7 @@ const anhaSchema = {
   farm: String,
 };
 
-const Anha = mongoose.model("Note", anhaSchema);
+const Anha = mongoose.model("Anha", anhaSchema);
 
 app.get("/healthCheck", (req, res) => {
   res.json({ status: "working" });
