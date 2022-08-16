@@ -129,7 +129,16 @@ form.addEventListener('submit', function (e) {
 
     // submit to the server if the form is valid
     if (isFormValid) {
-        console.log(nameEl.value);
+        const myFormData = new FormData(e.target);
+        const formDataObj = {};
+         myFormData.forEach((value, key) => (formDataObj[key] = value));
+          console.log(formDataObj);
+          fetch('http:/africannoniandherbs.herokuapp.com/join-us', {
+            method: 'POST',
+            body: formDataObj,
+          })
+          .then(res => res.json())
+          .then(data => console.log(data))
     }
 });
 
@@ -209,11 +218,3 @@ form.addEventListener('input', debounce(function (e) {
             break;
     }
 }));
-
-
-
-// pushing the data to atlas
-
-app.listen(3000, ()=> {
-    console.log('server running');
-})
