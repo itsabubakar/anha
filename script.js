@@ -13,9 +13,10 @@ const uri = process.env.DB_URI;
 async function connect() {
   try {
     await mongoose.connect(uri);
-    console.log("connected");
+    console.log("Successfully connected to mongo DB");
   } catch (error) {
-    console.log(error);
+    console.log("Failed to Connect to mongoDB", error);
+    process.exit()
   }
 }
 
@@ -40,7 +41,11 @@ const anhaSchema = {
 const Anha = mongoose.model("Note", anhaSchema);
 
 app.get("/healthCheck", (req, res) => {
-  res.json({ status: "ok" });
+  res.json({ status: "working" });
+});
+
+app.get("/potatoes", (req, res) => {
+  res.send("The serrver is working o");
 });
 
 app.post("/join-us", async (req, res) => {
