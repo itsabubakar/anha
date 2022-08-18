@@ -141,6 +141,7 @@ form.addEventListener('submit', function (e) {
           .then(res => res.json())
           .then(data => console.log(data))
     }
+    alert('form submitted, check email for payment procedure')
 });
 
 // utility function
