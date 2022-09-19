@@ -497,6 +497,7 @@ body {
 .anha-products .img-conc {
     display: grid;
     grid-template-columns: repeat(3, 250px);
+    gap: 30px;
 }
 
 .anha-products .img-item img {
